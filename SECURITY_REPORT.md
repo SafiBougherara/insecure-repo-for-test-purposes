@@ -1,17 +1,9 @@
 # 🔒 SecureScan Security Report
 
 **Scanned:** `https://github.com/SafiBougherara/insecure-repo-for-test-purposes`  
-**Date:** 2026-03-04 16:06
+**Date:** 2026-03-04 16:40
 
-## MEDIUM (4)
-- **[A06:2025]** Directory listing/indexing is enabled, which may lead to disclosure of sensitive directories and files. It is recommended to disable directory listing unless it is a public resource. If you need directory listing, ensure that sensitive files are inaccessible when querying the resource. — `server.ts`:269
-
-  **AI Fix:**
-  ```
-  ```typescript
-  // Original code (implied, as the provided snippet was 'requires login'):
-  // app
-  ```
+## MEDIUM (1)
 - **[A06:2025]** Directory listing/indexing is enabled, which may lead to disclosure of sensitive directories and files. It is recommended to disable directory listing unless it is a public resource. If you need directory listing, ensure that sensitive files are inaccessible when querying the resource. — `server.ts`:273
 
   **AI Fix:**
@@ -21,33 +13,6 @@
   import path from 'path';
   
   // ... other imports and app setup
-  ```
-- **[A06:2025]** Directory listing/indexing is enabled, which may lead to disclosure of sensitive directories and files. It is recommended to disable directory listing unless it is a public resource. If you need directory listing, ensure that sensitive files are inaccessible when querying the resource. — `server.ts`:277
-
-  **AI Fix:**
-  ```
-  ```typescript
-  // Original code around line 277 likely involves serving static files.
-  // To disable
-  ```
-- **[A06:2025]** Directory listing/indexing is enabled, which may lead to disclosure of sensitive directories and files. It is recommended to disable directory listing unless it is a public resource. If you need directory listing, ensure that sensitive files are inaccessible when querying the resource. — `server.ts`:281
-
-  **AI Fix:**
-  ```
-  ```typescript
-  // Assuming 'app' is your Express application instance and you are serving static files.
-  // If
-  ```
-
-## LOW (1)
-- **[A01:2025]** Detected string concatenation with a non-literal variable in a util.format / console.log function. If an attacker injects a format specifier in the string, it will forge the log message. Try to use constant values for the format string. — `server.ts`:155
-
-  **AI Fix:**
-  ```
-  ```typescript
-  // server.ts
-  // Original inferred vulnerable code (example):
-  // const userProvidedData =
   ```
 
 ---

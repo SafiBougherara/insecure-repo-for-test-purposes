@@ -1,4 +1,3 @@
-```javascript
 /*
  * Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.
  * SPDX-License-Identifier: MIT
@@ -28,4 +27,3 @@ import featurePolicy from 'feature-policy'
 import { IpFilter } from 'express-ipfilter'
 // @ts-expect-error FIXME due to non-existing type definitions for express-security.txt
 import securityTxt from 'express-security.txt'
-import serveIndex from 'serve-index' // Added
