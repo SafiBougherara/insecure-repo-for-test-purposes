@@ -1,178 +1,53 @@
 # 🔒 SecureScan Security Report
 
 **Scanned:** `https://github.com/SafiBougherara/insecure-repo-for-test-purposes`  
-**Date:** 2026-03-04 10:57
+**Date:** 2026-03-04 16:03
 
-## MEDIUM (16)
-- **[A06:2025]** Vulnerable dependency: @cyclonedx/cyclonedx-library — no title — `package.json`
-
-  **AI Fix:**
-  ```
-  ```json
-  {
-    "dependencies": {
-      "@cyclonedx/cyclonedx-library": "^9.1.0"
-    }
-  }
-  ```
-  ```
-- **[A06:2025]** Vulnerable dependency: @cyclonedx/cyclonedx-npm — no title — `package.json`
+## MEDIUM (4)
+- **[A06:2025]** Directory listing/indexing is enabled, which may lead to disclosure of sensitive directories and files. It is recommended to disable directory listing unless it is a public resource. If you need directory listing, ensure that sensitive files are inaccessible when querying the resource. — `server.ts`:269
 
   **AI Fix:**
   ```
-  ```json
-  {
-    "devDependencies": {
-      "@cyclonedx/cyclonedx-
+  ```typescript
+  // Original code (implied, as the provided snippet was 'requires login'):
+  // app
   ```
-- **[A06:2025]** Vulnerable dependency: base64url — no title — `package.json`
+- **[A06:2025]** Directory listing/indexing is enabled, which may lead to disclosure of sensitive directories and files. It is recommended to disable directory listing unless it is a public resource. If you need directory listing, ensure that sensitive files are inaccessible when querying the resource. — `server.ts`:273
 
   **AI Fix:**
   ```
-  ```json
-  {
-    "dependencies": {
-      "base64url": "^3.0.0"
-    }
-  }
+  ```typescript
+  import express from 'express';
+  import path from 'path';
+  
+  // ... other imports and app setup
   ```
-  ```
-- **[A06:2025]** Vulnerable dependency: check-dependencies — no title — `package.json`
+- **[A06:2025]** Directory listing/indexing is enabled, which may lead to disclosure of sensitive directories and files. It is recommended to disable directory listing unless it is a public resource. If you need directory listing, ensure that sensitive files are inaccessible when querying the resource. — `server.ts`:277
 
   **AI Fix:**
   ```
-  ```json
-  {
-    "dependencies": {
-    }
-  }
+  ```typescript
+  // Original code around line 277 likely involves serving static files.
+  // To disable
   ```
-  ```
-- **[A06:2025]** Vulnerable dependency: download — no title — `package.json`
+- **[A06:2025]** Directory listing/indexing is enabled, which may lead to disclosure of sensitive directories and files. It is recommended to disable directory listing unless it is a public resource. If you need directory listing, ensure that sensitive files are inaccessible when querying the resource. — `server.ts`:281
 
   **AI Fix:**
   ```
-  ```json
-  {
-    "dependencies": {
-      "download": "^13.0.0"
+  ```typescript
+  // Assuming 'app' is your Express application instance and you are serving static files.
+  // If
   ```
-- **[A06:2025]** Vulnerable dependency: ecstatic — no title — `package.json`
+
+## LOW (1)
+- **[A01:2025]** Detected string concatenation with a non-literal variable in a util.format / console.log function. If an attacker injects a format specifier in the string, it will forge the log message. Try to use constant values for the format string. — `server.ts`:155
 
   **AI Fix:**
   ```
-  ```json
-  {
-    "dependencies": {
-      "ecstatic": "^4.1.3"
-    }
-  }
-  ```
-  ```
-- **[A06:2025]** Vulnerable dependency: findup-sync — no title — `package.json`
-
-  **AI Fix:**
-  ```
-  ```json
-  // package.json
-  "dependencies": {
-    "findup-sync": "^5.0.0"
-  }
-  ```
-  ```
-- **[A06:2025]** Vulnerable dependency: http-server — no title — `package.json`
-
-  **AI Fix:**
-  ```
-  ```json
-  {
-    "devDependencies": {
-      "http-server": "^14.1.
-  ```
-- **[A06:2025]** Vulnerable dependency: js-yaml — no title — `package.json`
-
-  **AI Fix:**
-  ```
-  ```json
-  // package.json
-  "dependencies": {
-    "js-yaml": "^3
-  ```
-- **[A06:2025]** Vulnerable dependency: jwa — no title — `package.json`
-
-  **AI Fix:**
-  ```
-  ```json
-  {
-    "dependencies": {
-      "jwa": "^2.0.0"
-    }
-  }
-  ```
-  ```
-- **[A06:2025]** Vulnerable dependency: nanoid — no title — `package.json`
-
-  **AI Fix:**
-  ```
-  ```json
-  // package.json
-  "dependencies": {
-    "nanoid": "^3.3.8"
-  }
-  ```
-  ```
-- **[A06:2025]** Vulnerable dependency: notevil — no title — `package.json`
-
-  **AI Fix:**
-  ```
-  ```json
-  // package.json
-  "dependencies": {
-    "notevil": "^1.4.0"
-  }
-  ```
-  ```
-- **[A06:2025]** Vulnerable dependency: parseuri — no title — `package.json`
-
-  **AI Fix:**
-  ```
-  ```json
-  {
-    "dependencies": {
-      "parseuri": "^2.0.0"
-    }
-  }
-  ```
-  ```
-- **[A06:2025]** Vulnerable dependency: socket.io — no title — `package.json`
-
-  **AI Fix:**
-  ```
-  ```json
-  {
-    "dependencies": {
-      "socket.io": "^4.5
-  ```
-- **[A06:2025]** Vulnerable dependency: socket.io-parser — no title — `package.json`
-
-  **AI Fix:**
-  ```
-  ```json
-  {
-    "dependencies": {
-      "socket.io-parser": "^4.2.3"
-    }
-  }
-  ```
-  ```
-- **[A06:2025]** Vulnerable dependency: xmlbuilder2 — no title — `package.json`
-
-  **AI Fix:**
-  ```
-  ```json
-  {
-    "dependencies": {
-      "xmlbuilder2": "^3.2.1
+  ```typescript
+  // server.ts
+  // Original inferred vulnerable code (example):
+  // const userProvidedData =
   ```
 
 ---
