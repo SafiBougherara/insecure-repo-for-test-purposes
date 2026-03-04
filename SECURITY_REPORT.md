@@ -1,41 +1,178 @@
 # 🔒 SecureScan Security Report
 
 **Scanned:** `https://github.com/SafiBougherara/insecure-repo-for-test-purposes`  
-**Date:** 2026-03-03 14:35
+**Date:** 2026-03-04 10:57
 
-## CRITICAL (3)
-- **[A06:2025]** Vulnerable dependency: crypto-js — no title — `package.json`
+## MEDIUM (16)
+- **[A06:2025]** Vulnerable dependency: @cyclonedx/cyclonedx-library — no title — `package.json`
 
   **AI Fix:**
   ```
   ```json
   {
     "dependencies": {
-      "crypto-js": "^4.2.0"
+      "@cyclonedx/cyclonedx-library": "^9.1.0"
     }
   }
   ```
   ```
-- **[A06:2025]** Vulnerable dependency: juicy-chat-bot — no title — `package.json`
+- **[A06:2025]** Vulnerable dependency: @cyclonedx/cyclonedx-npm — no title — `package.json`
+
+  **AI Fix:**
+  ```
+  ```json
+  {
+    "devDependencies": {
+      "@cyclonedx/cyclonedx-
+  ```
+- **[A06:2025]** Vulnerable dependency: base64url — no title — `package.json`
 
   **AI Fix:**
   ```
   ```json
   {
     "dependencies": {
-      "juicy-chat-bot": "^0.9
-  ```
-- **[A06:2025]** Vulnerable dependency: pdfkit — no title — `package.json`
-
-  **AI Fix:**
-  ```
-  ```json
-  {
-    "dependencies": {
-      "pdfkit": "^0.15.0"
+      "base64url": "^3.0.0"
     }
   }
   ```
+  ```
+- **[A06:2025]** Vulnerable dependency: check-dependencies — no title — `package.json`
+
+  **AI Fix:**
+  ```
+  ```json
+  {
+    "dependencies": {
+    }
+  }
+  ```
+  ```
+- **[A06:2025]** Vulnerable dependency: download — no title — `package.json`
+
+  **AI Fix:**
+  ```
+  ```json
+  {
+    "dependencies": {
+      "download": "^13.0.0"
+  ```
+- **[A06:2025]** Vulnerable dependency: ecstatic — no title — `package.json`
+
+  **AI Fix:**
+  ```
+  ```json
+  {
+    "dependencies": {
+      "ecstatic": "^4.1.3"
+    }
+  }
+  ```
+  ```
+- **[A06:2025]** Vulnerable dependency: findup-sync — no title — `package.json`
+
+  **AI Fix:**
+  ```
+  ```json
+  // package.json
+  "dependencies": {
+    "findup-sync": "^5.0.0"
+  }
+  ```
+  ```
+- **[A06:2025]** Vulnerable dependency: http-server — no title — `package.json`
+
+  **AI Fix:**
+  ```
+  ```json
+  {
+    "devDependencies": {
+      "http-server": "^14.1.
+  ```
+- **[A06:2025]** Vulnerable dependency: js-yaml — no title — `package.json`
+
+  **AI Fix:**
+  ```
+  ```json
+  // package.json
+  "dependencies": {
+    "js-yaml": "^3
+  ```
+- **[A06:2025]** Vulnerable dependency: jwa — no title — `package.json`
+
+  **AI Fix:**
+  ```
+  ```json
+  {
+    "dependencies": {
+      "jwa": "^2.0.0"
+    }
+  }
+  ```
+  ```
+- **[A06:2025]** Vulnerable dependency: nanoid — no title — `package.json`
+
+  **AI Fix:**
+  ```
+  ```json
+  // package.json
+  "dependencies": {
+    "nanoid": "^3.3.8"
+  }
+  ```
+  ```
+- **[A06:2025]** Vulnerable dependency: notevil — no title — `package.json`
+
+  **AI Fix:**
+  ```
+  ```json
+  // package.json
+  "dependencies": {
+    "notevil": "^1.4.0"
+  }
+  ```
+  ```
+- **[A06:2025]** Vulnerable dependency: parseuri — no title — `package.json`
+
+  **AI Fix:**
+  ```
+  ```json
+  {
+    "dependencies": {
+      "parseuri": "^2.0.0"
+    }
+  }
+  ```
+  ```
+- **[A06:2025]** Vulnerable dependency: socket.io — no title — `package.json`
+
+  **AI Fix:**
+  ```
+  ```json
+  {
+    "dependencies": {
+      "socket.io": "^4.5
+  ```
+- **[A06:2025]** Vulnerable dependency: socket.io-parser — no title — `package.json`
+
+  **AI Fix:**
+  ```
+  ```json
+  {
+    "dependencies": {
+      "socket.io-parser": "^4.2.3"
+    }
+  }
+  ```
+  ```
+- **[A06:2025]** Vulnerable dependency: xmlbuilder2 — no title — `package.json`
+
+  **AI Fix:**
+  ```
+  ```json
+  {
+    "dependencies": {
+      "xmlbuilder2": "^3.2.1
   ```
 
 ---
